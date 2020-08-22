@@ -13,20 +13,43 @@
   gtag('config', 'UA-176019291-1');
 </script>
 <style>
-  a {
-    color:green;
-    text-decoration: none;
-
+  body{
+    margin:0;
   }
+  #active {
+    color:red;
+  }
+  .saw {
+    color:grey;
+  }
+  a {
+    color:black;
+    text-decoration: none;
+  }
+  h1 {
+    font-size: 60px;
+    text-align: center;
+    border-bottom:1px gray solid;
+    margin:0;
+    padding:20px;
+  }
+  .ol{
+    border-right:1px solid gray;
+    width:140px;
+    margin:0;
+    padding:20px;
+  }
+
+
 </style>
 </head>
 
 <body>
   <strong>
   <h1><a href="index.html">WEB</a></h1>
-  <ol>
-    <li><a href="Html.html">HTML</a></li>
-    <li><a href="CSS.html" style="color:black;text-decoration:underline;">CSS</a></li>
+  <ol class="ol">
+    <li><a href="Html.html"class="saw">HTML</a></li>
+    <li><a href="CSS.html" class="saw" id="active">CSS</a></li>
     <li><a href="JavaScript.html">JavaScript</a></li>
     <li><a href="노래.html">노래 들으면서 혀~</a></li>
   </ol>
@@ -39,16 +62,26 @@
   <p>
     <h3>단축키 정리</h3>
     <ul>
-      <li>주석 < !--  --></li>
-      <li>다음 줄로 개행(Ctrl+Enter)</li>
+      <li>html 주석 < !--  -->     css 주석(style 안에서) /* */</li>
+      <li>다음 줄로 개행(ctrl+Enter)</li>
+      <li>들여쓰기 ctrl+ [ or ]</li>
+      <li>html 기본 틀 html+tag</li>
+      <li>같은 단어 찾기 ctrl+d</li>
+      <li>트리 뷰 열고 닫기 ctrl+\</li>
+      <li>태그로 감싸기 ctrl+shift+w</li>
+      <li>창 닫기 ctrl+w</li>
     </ul>
   </p>
   <p>
-    <h3>수업 정리</h3>
+    <h3>수업 정리(태그(element), 속성 외울 필요 없다. 검색 잘하면 돼)</h3>
     <ul>
-      <li><strong>css 사용법1(style 태그-선택자,선언)</strong> head( style ( a { color:??? } ) );</li>
+      <li><strong>css 사용법1(style 태그-선택자,선언)</strong> head( style ( a { color:???; } ) );</li>
       <li><strong>css 사용법2(style 속성-선언)</strong> style="color:??? " </li>
       <li>밑줄 text-decoration: none; or underline</li>
+      <li>글자 크기font-size: ?em or ?px 글자 정렬 text-align: ???</li>
+      <li>.선택자 로  클래스=선택자인 태그를 가리킴(ex. .saw로 class="saw"가 있는 태그 찾음) </li>
+      <li>id선택자(#) > class선택자(.) > 태그 선택자</li>
+      <li>디자인을 위한 아무 의미없는 태그 div(block level), span(inline)</li>
     </ul>
   </p>
   <p>
