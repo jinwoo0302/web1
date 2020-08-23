@@ -4,8 +4,8 @@
   <title>HTML 정리</title>
   <meta charset="utf-utf-8">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176019291-1"></script>
-<script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176019291-1"></script>
+  <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -13,91 +13,122 @@
   gtag('config', 'UA-176019291-1');
 </script>
 <style>
+  body{
+    margin:0;
+  }
+  h1 {
+    font-size: 60px;
+    text-align:center;
+    border-bottom:1px gray solid;
+    margin:0;
+    padding:20px;
+  }
   a{
     text-decoration:none;
+    color:black;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns:200px 1fr;
+  }
+  .grid{
+    border-right: 1px solid gray;
+    margin:0;
+    padding-left: 40px;
+    padding-top: 15px;
+  }
+  #article{
+    padding-left: 25px;
   }
 </style>
 </head>
 
 <body>
-  <strong>
+
   <h1><a href="index.html">WEB</a></h1>
-  <ol>
-    <li><a href="Html.html">HTML</a></li>
-    <li><a href="CSS.html">CSS</a></li>
-    <li><a href="JavaScript.html">JavaScript</a></li>
-    <li><a href="노래.html">노래 들으면서 혀~</a></li>
-  </ol>
+  <div id="grid">
+    <ol class="grid">
+      <strong>
+        <li><a href="Html.html">HTML</a></li>
+        <li><a href="CSS.html">CSS</a></li>
+        <li><a href="JavaScript.html">JavaScript</a></li>
+        <li><a href="노래.html">노래</a></li>
+      </strong>
+    </ol>
+    <div id="article">
+      <h2><a href="https://ko.wikipedia.org/wiki/HTML"
+        target="_blank" title="html 위키피디아">HTML</a>정리</h2>
+        <ol>
+          <li>태그 정리</li>
+          <li>수업 정리</li>
+          <li>다음 수업</li>
+        </ol>
+        <h3>태그 정리(단축키:탭)</h3>
+        <p>
+          <ul>
+            <li>파일 열기 <u>ctrl+o</u></li>
+            <li>밑줄 u 볼드 strong 제목 h1~h6</li>
+            <li>줄바꿈 br   문단 p   이미지 img</li>
+            <li>리스트 li 의 부모 ul ol(순서)</li>
+            <li>처음 !doctype 다음 html 안에 head(안에 title) 랑 body</li>
+            <li>링크 a 의 속성 href="주소" 새창 target="_blank" 툴팁 title="내용"</li>
+          </ul>
+        </p>
+        <h3>수업 정리</h3>
+        <p>
+          <ul>
+            <li>유튜브 영상 속도 올리기  shift + .<br></li>
+            <li>태그로 정보의 전달이 부족할 때 속성 사용(위치 노상관)<br></li>
+            <li>ctrl로 커서 여러개 만들 수 있음</li>
+            <li>shift로 전체 모아서 탭하면 들여쓰기</li>
+            <li>클라이언트-서버(웹서버를 사용하면 다른 이가 내 문서를 볼 수 있고 그 방법은
+              웹 호스팅(인터넷과 연결된 컴퓨터, 호스트를 제공하는 것)과 웹서버 운영이다) </li>
+            </ul>
+          </P>
+          <h3>다음 수업</h3>
+          <p>
+            끝~
+          </p>
 
-  <h2><a href="https://ko.wikipedia.org/wiki/HTML"
-    target="_blank" title="html 위키피디아">HTML</a>정리</h2>
-  <ol>
-    <li>태그 정리</li>
-    <li>수업 정리</li>
-    <li>다음 수업</li>
-  </ol>
-  <h3>태그 정리(단축키:탭)</h3>
-  <p>
-    <ul>
-      <li>파일 열기 <u>ctrl+o</u></li>
-      <li>밑줄 u 볼드 strong 제목 h1~h6</li>
-      <li>줄바꿈 br   문단 p   이미지 img</li>
-      <li>리스트 li 의 부모 ul ol(순서)</li>
-      <li>처음 !doctype 다음 html 안에 head(안에 title) 랑 body</li>
-      <li>링크 a 의 속성 href="주소" 새창 target="_blank" 툴팁 title="내용"</li>
-    </ul>
-  </p>
-  <h3>수업 정리</h3>
-  <p>
-    <ul>
-      <li>유튜브 영상 속도 올리기  shift + .<br></li>
-      <li>태그로 정보의 전달이 부족할 때 속성 사용(위치 노상관)<br></li>
-      <li>ctrl로 커서 여러개 만들 수 있음</li>
-      <li>shift로 전체 모아서 탭하면 들여쓰기</li>
-      <li>클라이언트-서버(웹서버를 사용하면 다른 이가 내 문서를 볼 수 있고 그 방법은
-      웹 호스팅(인터넷과 연결된 컴퓨터, 호스트를 제공하는 것)과 웹서버 운영이다) </li>
-    </ul>
-  </P>
-  <h3>다음 수업</h3>
-  <p>
-  WEB1-부록
-  <img src="chest.jpg" width="50%">
-  </p>
-  <p>
-    <div id="disqus_thread"></div>
-  <script>
+          <img src="Journey.jpg" width="30%">
 
-  /**
-  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-  /*
-  var disqus_config = function () {
-  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-  };
-  */
-  (function() { // DON'T EDIT BELOW THIS LINE
-  var d = document, s = d.createElement('script');
-  s.src = 'https://webeul-baeweoboja.disqus.com/embed.js';
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
-  })();
+        </div>
+      </div>
+      <p>
+        <div id="disqus_thread"></div>
+        <script>
+
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://webeul-baeweoboja.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </p>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/5f3e68a4cc6a6a5947ad5d1a/default';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
   </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                            </p>
-  <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5f3e68a4cc6a6a5947ad5d1a/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-</strong>
+  <!--End of Tawk.to Script-->
+
 </body>
 </html>

@@ -13,27 +13,52 @@
   gtag('config', 'UA-176019291-1');
 </script>
 <style>
+  h1 {
+    font-size: 60px;
+    text-align:center;
+    border-bottom:1px gray solid;
+    margin:0;
+    padding:20px;
+  }
   a{
     text-decoration:none;
+    color:black;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns:200px 1fr;
+  }
+  .grid{
+    border-right: 1px solid gray;
+    margin:0;
+    padding-left: 40px;
+    padding-top: 15px;
+  }
+  #article{
+    padding-left: 25px;
   }
 </style>
 </head>
 
 <body>
-  <strong>
   <h1><a href="index.html">WEB</a><a href="https://jinwoo0302.github.io/web1/">(주소)</a></h1>
-  <ol>
-    <li><a href="Html.html">HTML</a></li>
-    <li><a href="CSS.html">CSS</a></li>
-    <li><a href="JavaScript.html">JavaScript</a></li>
-    <li><a href="노래.html">노래 들으면서 혀~</a></li>
-  </ol>
-
-  <h2><a href="https://ko.wikipedia.org/wiki/HTML"
-    target="_blank" title="html 위키피디아">WEB</a>정리</h2>
-  <p>
-  WEB에는 Html, Css, JavaScript가 있어용!</p>
-  <p>
+  <div id="grid">
+    <ol class="grid">
+      <strong>
+        <li><a href="Html.html">HTML</a></li>
+        <li><a href="CSS.html">CSS</a></li>
+        <li><a href="JavaScript.html">JavaScript</a></li>
+        <li><a href="노래.html">노래</a></li>
+      </strong>
+    </ol>
+    <div id="article">
+      <h2><a href="https://ko.wikipedia.org/wiki/HTML"
+        target="_blank" title="html 위키피디아">WEB</a>정리</h2>
+      <p>
+      WEB에는 Html, Css, JavaScript가 있어용!</p>
+      <p>
+    </div>
+  </div>
     <div id="disqus_thread"></div>
   <script>
 
@@ -55,19 +80,19 @@
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                               </p>
-                              <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5f3e68a4cc6a6a5947ad5d1a/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-</strong>
+                                <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/5f3e68a4cc6a6a5947ad5d1a/default';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+
 </body>
 </html>

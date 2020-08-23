@@ -4,8 +4,8 @@
   <title>CSS 정리</title>
   <meta charset="utf-utf-8">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176019291-1"></script>
-<script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176019291-1"></script>
+  <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -13,118 +13,127 @@
   gtag('config', 'UA-176019291-1');
 </script>
 <style>
-  body{
-    margin:0;
-  }
-  #active {
-    color:red;
-  }
-  .saw {
-    color:grey;
-  }
-  a {
-    color:black;
-    text-decoration: none;
-  }
-  h1 {
-    font-size: 60px;
-    text-align: center;
-    border-bottom:1px gray solid;
-    margin:0;
-    padding:20px;
-  }
-  .ol{
-    border-right:1px solid gray;
-    width:140px;
-    margin:0;
-    padding:20px;
-  }
-
+body{
+  margin:0;
+}
+h1 {
+  font-size: 60px;
+  text-align:center;
+  border-bottom:1px gray solid;
+  margin:0;
+  padding:20px;
+}
+a{
+  text-decoration:none;
+  color:black;
+}
+#grid{
+  display: grid;
+  grid-template-columns:200px 1fr;
+}
+.grid{
+  border-right: 1px solid gray;
+  margin:0;
+  padding-left: 40px;
+  padding-top: 15px;
+}
+#article{
+  padding-left: 25px;
+}
 
 </style>
 </head>
 
 <body>
-  <strong>
+
   <h1><a href="index.html">WEB</a></h1>
-  <ol class="ol">
-    <li><a href="Html.html"class="saw">HTML</a></li>
-    <li><a href="CSS.html" class="saw" id="active">CSS</a></li>
-    <li><a href="JavaScript.html">JavaScript</a></li>
-    <li><a href="노래.html">노래 들으면서 혀~</a></li>
-  </ol>
-  <h2>CSS정리</h2>
-  <ol>
-    <li>단축키 정리</li>
-    <li>수업 정리</li>
-    <li>다음 수업</li>
-  </ol>
-  <p>
-    <h3>단축키 정리</h3>
-    <ul>
-      <li>html 주석 < !--  -->     css 주석(style 안에서) /* */</li>
-      <li>다음 줄로 개행(ctrl+Enter)</li>
-      <li>들여쓰기 ctrl+ [ or ]</li>
-      <li>html 기본 틀 html+tag</li>
-      <li>같은 단어 찾기 ctrl+d</li>
-      <li>트리 뷰 열고 닫기 ctrl+\</li>
-      <li>태그로 감싸기 ctrl+shift+w</li>
-      <li>창 닫기 ctrl+w</li>
-    </ul>
-  </p>
-  <p>
-    <h3>수업 정리(태그(element), 속성 외울 필요 없다. 검색 잘하면 돼)</h3>
-    <ul>
-      <li><strong>css 사용법1(style 태그-선택자,선언)</strong> head( style ( a { color:???; } ) );</li>
-      <li><strong>css 사용법2(style 속성-선언)</strong> style="color:??? " </li>
-      <li>밑줄 text-decoration: none; or underline</li>
-      <li>글자 크기font-size: ?em or ?px 글자 정렬 text-align: ???</li>
-      <li>.선택자 로  클래스=선택자인 태그를 가리킴(ex. .saw로 class="saw"가 있는 태그 찾음) </li>
-      <li>id선택자(#) > class선택자(.) > 태그 선택자</li>
-      <li>디자인을 위한 아무 의미없는 태그 div(block level), span(inline)</li>
-    </ul>
-  </p>
-  <p>
-    <h3>다음 수업</h3>
-    WEB2 CSS-6
+  <div id="grid">
+    <ol class="grid">
+      <strong>
+        <li><a href="Html.html">HTML</a></li>
+        <li><a href="CSS.html">CSS</a></li>
+        <li><a href="JavaScript.html">JavaScript</a></li>
+        <li><a href="노래.html">노래</a></li>
+      </strong>
+    </ol>
 
-  </p>
+    <div id="article">
+      <h2>CSS정리</h2>
+      <ol>
+        <li>단축키 정리</li>
+        <li>수업 정리</li>
+        <li>다음 수업</li>
+      </ol>
+      <p>
+        <h3>단축키 정리</h3>
+        <ul>
+          <li>html 주석 < !--  -->     css 주석(style 안에서) /* */</li>
+          <li>다음 줄로 개행(ctrl+Enter)</li>
+          <li>들여쓰기 ctrl+ [ or ]</li>
+          <li>html 기본 틀 html+tag</li>
+          <li>같은 단어 찾기 ctrl+d</li>
+          <li>트리 뷰 열고 닫기 ctrl+\</li>
+          <li>태그로 감싸기 ctrl+shift+w</li>
+          <li>창 닫기 ctrl+w</li>
+          <li>전체 선택 ctrl+a  한 줄 선택 ctrl+l</li>
+          <li>들여쓰기 ctrl+shift+f</li>
+        </ul>
+      </p>
+      <p>
+        <h3>수업 정리(태그(element), 속성 외울 필요 없다. 검색 잘하면 돼)</h3>
+        <ul>
+          <li><strong>css 사용법1(style 태그-선택자,선언)</strong> head( style ( a { color:???; } ) );</li>
+          <li><strong>css 사용법2(style 속성-선언)</strong> style="color:??? " </li>
+          <li>밑줄 text-decoration: none; or underline</li>
+          <li>글자 크기font-size: ?em or ?px 글자 정렬 text-align: ???</li>
+          <li>.선택자 로  클래스=선택자인 태그를 가리킴(ex. .saw로 class="saw"가 있는 태그 찾음) </li>
+          <li>id선택자(#) > class선택자(.) > 태그 선택자</li>
+          <li>디자인을 위한 아무 의미없는 태그 div(block level), span(inline)</li>
+          <li>caniuse란 사이트에 기술의 대세를 알 수 있다</li>
+        </ul>
+      </p>
+      <p>
+        <h3>다음 수업</h3>
+        WEB2 CSS-6
+      </p>
+    </div>
+  </div>
 
-<p>
-  <div id="disqus_thread"></div>
-  <script>
+  <p>
+    <div id="disqus_thread"></div>
+    <script>
 
-  /**
-  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-  /*
-  var disqus_config = function () {
-  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
   };
   */
   (function() { // DON'T EDIT BELOW THIS LINE
-  var d = document, s = d.createElement('script');
-  s.src = 'https://webeul-baeweoboja.disqus.com/embed.js';
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
+    var d = document, s = d.createElement('script');
+    s.src = 'https://webeul-baeweoboja.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
   })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                              </p>
-                              <!--Start of Tawk.to Script-->
+</p>
+<!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5f3e68a4cc6a6a5947ad5d1a/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/5f3e68a4cc6a6a5947ad5d1a/default';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
-</strong>
+
 </body>
 </html>
