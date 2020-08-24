@@ -40,7 +40,18 @@ a{
 #article{
   padding-left: 25px;
 }
+@media(max-width: 900px){
+  h1{
+    border-bottom: none;
+  }
+  #grid{
+    display:block;
+  }
+  .grid{
+    border-right: none;
+  }
 
+}
 </style>
 </head>
 
@@ -90,6 +101,7 @@ a{
           <li>id선택자(#) > class선택자(.) > 태그 선택자</li>
           <li>디자인을 위한 아무 의미없는 태그 div(block level), span(inline)</li>
           <li>caniuse란 사이트에 기술의 대세를 알 수 있다</li>
+          <li>미디어 쿼리(반응형 디자인) @media(조건) { 내용 }</li>
         </ul>
       </p>
       <p>
