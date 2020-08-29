@@ -18,6 +18,15 @@
 <body>
 
   <h1><a href="index.html">WEB</a></h1>
+  <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    " >
+  <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    ">
+
   <div id=grid>
     <ol class="grid">
       <strong>
@@ -31,7 +40,10 @@
       <h2><a href="https://ko.wikipedia.org/wiki/HTML"
         target="_blank" title="html 위키피디아">JavaScript</a>정리</h2>
         <p>
-          아직 안배웠어용~
+          <li>script태그 안에는 javascript가 온다.</li>
+          <li>이벤트 속성을 이용해 사용자와 상호작용하자</li>
+          <li>console창에서 JavaScript를 즉석에서 실행 가능하다(위쪽 화살표키)</li>
+          <li>변수 앞에 var 가급적 써라</li>
         </p>
         <p>
         </div>

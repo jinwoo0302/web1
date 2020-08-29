@@ -8,9 +8,7 @@ h1 {
   margin:0;
   padding:20px;
 }
-a{
-  color:black;
-}
+
 #grid{
   display: grid;
   grid-template-columns:200px 1fr;
